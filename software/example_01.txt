@@ -1,0 +1,56 @@
+EJERCICIO EJEMPLO DE USO DE NÚMEROS ALEATORIOS EN JAVA
+Vamos a resolver ejercicios ilustrativos del uso de números aletorios en Java. 
+El primero de ellos: crear el código de un programa en el que se declaren tres variables tipo float  a, b y c, cuyo valor se muestre en pantalla y deberá estar comprendido entre cero y 10, excluido el diez.
+
+/* Ejemplo uso clase Random() – aprenderaprogramar.com */
+import java.util.Random;
+public class Programa {
+      public static void main(String arg[]) {
+            float a, b, c;
+            Random rnd = new Random();
+            a = (rnd.nextFloat() * 10);
+            b = (rnd.nextFloat() * 10);
+            c = (rnd.nextFloat() * 10);
+            System.out.println(a);        
+            System.out.println(b);        
+            System.out.println(c);        
+      }
+} 
+
+Crear el código de un programa en el que se declaran tres variables tipo int  a, b y c, cuyo valor se muestra en pantalla y debe estar comprendido entre cero y 100, utilizando el método nextInt de la clase Random.
+
+/* Ejemplo uso clase Random() – aprenderaprogramar.com */
+ import java.util.Random;
+ public class Programa {
+      public static void main(String arg[]) {
+            int a, b, c;
+            Random rnd = new Random();
+            a = rnd.nextInt(101);
+            b = rnd.nextInt(101);
+            c = rnd.nextInt(101);      
+            System.out.println(a);        
+            System.out.println(b);        
+            System.out.println(c);        
+      }
+ }
+ 
+ Crear el código de un programa que genera tres números enteros aleatorios a, b, c, comprendidos entre 65 y 90, ambos inclusive. 
+ Los mostraremos en pantalla.
+ 
+  /* Ejemplo uso clase Random() – aprenderaprogramar.com */
+ import java.util.Random;
+ public class Programa {
+      public static void main(String arg[]) {
+            int a, b, c;
+            Random rnd = new Random();
+            a = (rnd.nextInt(26) + 65);
+            b = (rnd.nextInt(26) + 65);
+            c = (rnd.nextInt(26) + 65);
+            System.out.println(a);        
+            System.out.println(b);        
+            System.out.println(c);        
+      }
+ }
+ 
+ 
+ 
